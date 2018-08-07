@@ -1,0 +1,145 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    
+}
+body {
+
+    background-image: url(../img/background.jpg);
+    background-size:100px 100px;
+}
+header {
+    height: 70px;
+    background-color: #FFB1B1;
+}
+main {
+    min-height: calc(100vh - 140px);
+    background-color: #FDE9D0;
+    padding-bottom: 70px;
+    overflow: auto;
+    text-align: center;
+    color: #750353
+}
+.main-wrapper {
+    position: relative;
+    width: calc(100% - 300px);
+    min-height: 100%;
+    max-width: 1600px;
+    min-width: 900px;
+    margin: 0 auto;
+}
+.macth-game-header {
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+    color: #750353;
+}
+.game-container-wrapper {
+    display: inline-block;
+    min-width: 650px;
+    min-height: 700px;
+    margin: 0 auto;
+}
+.game-settings-container {
+    margin-top: 70px;
+}
+.rules-list {
+    text-align: left;
+}
+input[type="radio"], label {
+    cursor: pointer;
+}
+.choose-column {
+    display: inline-block;
+    margin-left: 10px;
+}
+.start-button-wrapper {
+    margin-top: 40px;
+}
+[class$="-game-button"] {
+    background-color: #DE9887;
+    margin-left: 8px;
+    border: none;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 23px;
+    color: #7E0246;
+    outline: none;
+    border-radius: 3px;
+}
+[class$="-game-button"]:hover {
+    opacity: 0.7;
+}
+.game-container {
+    display: none;
+    margin-top: 50px;
+}
+.change-game-buttons {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.quit-button-wrapper {
+    margin-top: 50px;
+}
+.game-over-container {
+    display: none;
+}
+.game-over-header {
+    margin: 30px;
+}
+.time-container {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 30px;
+}
+.game-over-container button {
+    margin-left: 0;
+}
+.cards-set5 {
+    width: 750px;
+}
+.cards-set6 {
+    width: 650px;
+}
+.cards-set9 {
+    width: 860px;
+}
+.card {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 120px;
+    height: 169px;
+}
+.game-time {
+    height: 50px;
+    font-size: 23px;
+    font-weight: 600;
+}
+.card-front, .card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.card-front {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.card-open .card-front {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+.card-back {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+.card-open .card-back {
+    opacity: 0;
+}
+.card-hidden {
+    opacity: 0;
+    transition: opacity 0.5s;
+}

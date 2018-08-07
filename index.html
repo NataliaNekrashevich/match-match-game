@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Match match game</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="img/launch_ic.png">
+        <link rel="stylesheet" href="css/style.css">        
+    </head>
+    <body>
+        <div class="main-wrapper">
+            <header>
+                <h1 class="macth-game-header">Welcome! Enjoy this game!</h1>
+            </header>
+            <main>
+                <div class="game-container-wrapper">
+                    <div class="game-info-container">
+                        <section class="rules-container">
+                            <h3>How to play:</h3>
+                            <ol class="rules-list">
+                                <li>
+                                    Select two cards.
+                                </li>
+                                <li>
+                                    If you find the same cards, this cards will be hidden.
+                                </li>
+                                <li>
+                                    If you find different cards, remember their positions.
+                                </li>
+                                <li>
+                                    Goal: find all same cards pairs.
+                                </li>
+                            </ol>
+                        </section>
+                        <section class="game-settings-container">
+                            <form>
+                                <h3>Choose your card theme:</h3>
+                                    <div class="choose-column">
+                                        <label for="card-choose-one">
+                                            <img src="img/card-back/animal-back-side.png" alt="animal">
+                                        </label><br><br>
+                                        <input type="radio" name="card-back" id="card-choose-one" value='animalsURLs' checked>
+                                    </div>
+                                    <div class="choose-column">
+                                        <label for="card-choose-two">
+                                            <img src="img/card-back/food-back-side.png" alt="food">
+                                        </label><br><br>
+                                        <input type="radio" name="card-back" id="card-choose-two" value='foodURLs'>
+                                    </div>
+                                <h3>Choose game difficulty:</h3>
+                                    <div class="choose-column">
+                                        <label for="game-difficulty-one">Low (5 x 2)</label><br><br>
+                                        <input type="radio" name="game-difficulty" id="game-difficulty-one" value='5' checked>
+                                    </div>
+                                    <div class="choose-column">
+                                        <label for="game-difficulty-two">Medium (4 x 3)</label><br><br>
+                                        <input type="radio" name="game-difficulty" id="game-difficulty-two" value='6'>
+                                    </div>
+                                    <div class="choose-column">
+                                        <label for="game-difficulty-three">High (6 x 3)</label><br><br>
+                                        <input type="radio" name="game-difficulty" id="game-difficulty-three" value='9'>
+                                    </div>                                                                  
+                            </form>
+                            <div class="start-button-wrapper">
+                                <button class="start-game-button">Start game!</button>
+                            </div>  
+                        </section>
+                    </div>
+                    <div class="game-container">
+                        <div class="game-time">
+                            Game time:
+                            <span class="time-text"></span>
+                        </div>
+                        <div class="game-card-container"></div>
+                        <div class="change-game-buttons">
+                            <button class="reset-game-button">Reset</button>
+                            <button class="quit-game-button">Quit game</button>
+                        </div>
+                    </div>
+                    <div class="game-over-container">
+                        <h2 class="game-over-header">
+                            Great! You did it!
+                        </h2>
+                        <div class="time-container">
+                            Your final time is:
+                            <span class="time"></span>
+                        </div>
+                        <img src="img/Trophy.png" alt="You did it!">
+                        <div class="quit-button-wrapper">
+                            <button class="quit-game-button">Quit game</button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script src="js/polyfills.js"></script>
+        <script src="js/game.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
